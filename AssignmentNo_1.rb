@@ -10,5 +10,5 @@ def sum_of_cubes(a,b)
   sum
 end
 
-total_sum=sum_of_cubes(1,2)
+total_sum=sum_of_cubes(3,5)
 puts total_sum
