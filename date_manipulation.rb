@@ -13,4 +13,6 @@ puts Time.now + (7 * 24 * 60 * 60)
 
 puts Time.now + (20*24*60*60)
 
+#converting date into array
 
+puts Time.now.to_s.chars
