@@ -8,3 +8,9 @@ puts Time.local(2012, 1, 12).strftime('%d %b %Y')
 # adding 7 days in current date
 
 puts Time.now + (7 * 24 * 60 * 60)
+
+#print date after 20 days of current date
+
+puts Time.now + (20*24*60*60)
+
+
