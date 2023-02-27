@@ -7,18 +7,18 @@ end
 puts count1
 
 # by using lambda expression
-even_number_1 = lambda { |no|
+even_number_by_lambda = lambda { |no|
   no.even?
 }
-even_number_array = array.select(& even_number_1)
+even_number_array = array.select(& even_number_by_lambda)
 puts even_number_array.count
 
 # by using procs
-even_no_2 = proc do |arr|
-  count2 = 0
+even_no_by_proc = proc do |arr|
+  count = 0
   arr.each do |no|
-    count2 += 1 if no.even?
+    count += 1 if no.even?
   end
-  puts count2
+  puts count
 end
-even_no_2.call(array)
+even_no_by_proc.call(array)
