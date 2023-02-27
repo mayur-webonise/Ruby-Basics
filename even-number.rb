@@ -1,10 +1,8 @@
 # #by using block
 array = [1, 3, 5, 7, 9, 33, 55, 98, 61, 22]
-count1 = 0
-array.each do |no|
-  count1 += 1 if no.even?
-end
-puts count1
+count = 0
+array.each { |no| count += 1 if no.even? }
+puts count
 
 # by using lambda expression
 even_number_by_lambda = lambda { |no|
