@@ -5,9 +5,7 @@ array.each { |no| count += 1 if no.even? }
 puts count
 
 # by using lambda expression
-even_number_by_lambda = lambda { |no|
-  no.even?
-}
+even_number_by_lambda = ->(no) { no.even? }
 even_number_array = array.select(& even_number_by_lambda)
 puts even_number_array.count
 
