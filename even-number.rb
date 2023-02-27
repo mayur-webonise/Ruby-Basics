@@ -1,10 +1,10 @@
 # #by using block
 array = [1, 3, 5, 7, 9, 33, 55, 98, 61, 22]
-cnt1 = 0
+count1 = 0
 array.each do |no|
-  cnt1 += 1 if no.even?
+  count1 += 1 if no.even?
 end
-puts cnt1
+puts count1
 
 # by using lambda expression
 even_number_1 = lambda { |no|
@@ -14,11 +14,11 @@ even_number_array = array.select(& even_number_1)
 puts even_number_array.count
 
 # by using procs
-prime_no_2 = proc do |arr|
-  cnt2 = 0
+even_no_2 = proc do |arr|
+  count2 = 0
   arr.each do |no|
-    cnt2 += 1 if no.even?
+    count2 += 1 if no.even?
   end
-  puts cnt2
+  puts count2
 end
-prime_no_2.call(array)
+even_no_2.call(array)
